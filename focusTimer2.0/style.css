@@ -1,0 +1,146 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+:root{
+    --bgColor:white;
+    --textColor:#323238;
+    --controlButtons:#323238;
+    --bgButtonsColor:#17f75a;
+    --bgButtonsColorLight: #E1E1E6;
+
+    font-size: 62.5%;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color:var(--bgColor);
+    color:var(--textColor);
+    min-height: 100vh;
+
+    display:grid;
+
+}
+main{
+    display:flex;
+    flex-direction: row;
+    justify-self: center;
+    align-self: flex-end;
+  
+
+}
+
+#container{
+        display:flex;
+        flex-direction: row;
+        gap:9.2rem;
+
+}
+
+
+
+
+button{
+    background-color: transparent;
+    border:none;
+    cursor: pointer;
+
+}
+
+#timer {
+    font-size:12.7rem;
+    font-weight: bold;
+    font-style: normal;
+    line-height: 14.8rem;
+    text-transform: uppercase;
+
+    display: flex;
+    justify-content: space-around;
+
+    margin-bottom: 1.6rem;
+
+  }
+
+.hide{
+    display:none;
+}
+.play svg path,
+.pause svg path,
+.stop svg path,
+.soundsBackground svg path {
+   fill:var(--controlButtons);
+}
+
+
+.soundTree,
+.soundRain,
+.soundHouse,
+.soundFire
+ {
+    background-color: var(--bgButtonsColorLight);
+    width: 13.8rem;
+    height: 15.2rem;
+    border-radius: 2.4rem;
+    
+}
+
+.soundTreeColor,
+.soundRainColor,
+.soundHouseColor,
+.soundFireColor
+ {
+    background-color: var(--bgButtonsColor);
+    width: 13.8rem;
+    height: 15.2rem;
+    border-radius: 2.4rem;
+    
+ }
+.soundTreeColor svg path ,
+.soundRainColor svg path,
+.soundHouseColor svg path,
+.soundFireColor svg path  {
+    fill:var(--bgButtonsColorLight);
+}
+
+
+
+.timerControls {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+
+   
+}
+
+
+
+.soundsBackground {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap:3.2rem;
+    
+}
+
+
+
+
+#controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:4.0rem;
+
+    border-radius: 9999px;
+
+
+}
+
+
+@media (max-width: 700px) {
+    #container {
+      flex-direction: column;
+    }
+  }
